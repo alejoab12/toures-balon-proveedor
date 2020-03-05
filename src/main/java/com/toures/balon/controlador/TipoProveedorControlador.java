@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.toures.balon.persistencia.entidad.TipoProveedor;
+import com.toures.balon.modelo.TipoProveedorModelo;
 import com.toures.balon.servicio.TipoProveedorServicio;
 
 @RestController
@@ -16,8 +16,9 @@ import com.toures.balon.servicio.TipoProveedorServicio;
 public class TipoProveedorControlador {
 	@Autowired
 	private TipoProveedorServicio tipoProveedorServicio;
+
 	@GetMapping
-	public ResponseEntity<List<TipoProveedor>> listarTiposProveedor(){
+	public ResponseEntity<List<TipoProveedorModelo>> listarTiposProveedor() {
 		return ResponseEntity.ok(tipoProveedorServicio.listaTiposProveedores());
 	}
 
