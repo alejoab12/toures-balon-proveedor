@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+    - dev
+  application:
+    name: toures-balon-proveedor
+  data:
+    mongodb:
+      uri:  mongodb://localhost/proveedor
+      port: 27017
+      password:
+      username: 
+server:
+  port: 9796
+eureka:
+  client:
+  #  service-url: {"http://toures-balon-discovery:8761/eureka"}
+    serviceUrl:
+      defaultZone: "http://localhost:8761/eureka"
+  instance:
+    prefer-ip-address: true
+ 

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: toures-balon-proveedor
+  profiles: prod
+  cloud:
+    config:
+      uri: http://172.17.0.3:8888
