@@ -23,7 +23,6 @@ public class ProveedorServicioImp implements ProveedorServicio {
 	}
 	@Override
 	public Proveedor buscarPorNombre(String nombre) {
-		// TODO Auto-generated method stub
 		return proveedorRepo.findByNombre(nombre);
 	}
 
