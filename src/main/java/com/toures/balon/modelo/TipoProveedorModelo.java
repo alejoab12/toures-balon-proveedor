@@ -10,6 +10,9 @@ public class TipoProveedorModelo {
 	private String nombre;
 	private String pathServicio;
 
+	public TipoProveedorModelo() {
+	}
+
 	public TipoProveedorModelo(TipoProveedor tipoProveedor) {
 		this.idTipoProveedor = tipoProveedor.getIdTipoProveedor();
 		this.nombre = tipoProveedor.getNombre();

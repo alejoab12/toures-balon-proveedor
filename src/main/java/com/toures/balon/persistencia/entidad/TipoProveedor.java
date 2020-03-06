@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 import lombok.Data;
 
-@Document("tipo_proveedor")
+@Document(collection="tipo_proveedor")
 @Data
 public class TipoProveedor {
 	@Id

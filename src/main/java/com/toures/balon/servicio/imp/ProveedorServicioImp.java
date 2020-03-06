@@ -33,6 +33,7 @@ public class ProveedorServicioImp implements ProveedorServicio {
 
 	@Override
 	public void guardarProveedor(ProveedorModelo proveedorModelo) {
+		System.out.println(proveedorModelo);
 		proveedorRepo.save(proveedorModelo.toEntity());
 
 	}
